@@ -1,0 +1,100 @@
+@font-face {
+    font-family: comic;
+    src: url();
+}
+body {
+    margin: 0 auto;
+    background-color: gray;
+    font-family: Comic Sans MS;
+}
+.principal {
+    display: grid;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 60px;
+
+}
+.primeira {
+    width: 100%;
+    background-color: white;
+    padding: 1.9rem 2.5rem;
+    border: 1px solid transparent;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #32a895;
+    margin-bottom: 1.9rem;
+}
+.primeira h2 {
+    color: #65a832;
+}
+
+.primeira p {
+    color: gray;
+}
+
+.segunda {
+    width: 100%;
+    background-color: #2bb3b1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+}
+
+.preco {
+    padding: 1rem;
+    border: 1px solid transparent;
+    justify-self: center;
+}
+
+.preco strong {
+    font-size: 2rem;
+}
+
+.preco span {
+    opacity: 0.5;
+}
+.preco p {
+    margin-bottom: 2rem;
+}
+
+.preco a {
+    display: inline-block;
+    padding: 1rem 0.5rem;
+    text-decoration: none;
+    background-color: #3adb12;
+    color: white;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+
+.preco a:hover {
+    background-color: #305e25;
+}
+
+.descricao {
+    padding: 1rem 3rem;
+    border: 1px solid transparent;
+    text-align: left;
+    line-height: 1.5rem;
+    background-color: #4abebd;
+    border-bottom-right-radius: 10px;
+}
+
+
+@media (max-width: 640px) {
+    .segunda {
+        grid-template-columns: 1fr;
+    }
+
+    .preco a {
+        margin-bottom: 2rem;
+    }
+}
